@@ -1,268 +1,333 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0a0a0a">
-<title>大洋國際車業集團｜創始股東招募企畫</title>
-<meta name="description" content="大洋國際車業集團創始股東招募企畫－高端中古車交易 × 創始股東會員生態圈">
+<meta name="theme-color" content="#090909">
+<title>大洋國際車業集團｜創始股東招募企畫書</title>
+<meta name="description" content="大洋國際車業集團創始股東招募企畫：高端中古車交易 × 創始股東會員生態圈">
 <style>
-:root{
-  --bg:#090909; --bg2:#121212; --card:#171717; --line:#2d2a24;
-  --text:#f4f1ea; --muted:#b8b1a6; --gold:#caa96b; --gold2:#e0c38b;
-  --danger:#c86d62; --ok:#78a97f; --max:1180px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;line-height:1.65}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.container{width:min(calc(100% - 36px),var(--max));margin:auto}
-.nav{position:sticky;top:0;z-index:50;background:rgba(9,9,9,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(202,169,107,.18)}
-.navin{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-weight:800;letter-spacing:.06em}
-.brand small{display:block;color:var(--gold);font-size:11px;letter-spacing:.18em;font-weight:600}
-.menu{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:#d7d0c6}
-.menu a:hover{color:var(--gold2)}
-.hero{min-height:82vh;display:grid;align-items:end;background:
-radial-gradient(circle at 78% 35%,rgba(224,195,139,.30),transparent 18%),
-radial-gradient(circle at 82% 57%,rgba(202,169,107,.15),transparent 30%),
-linear-gradient(120deg,#050505 0%,#101010 48%,#21170d 100%)}
-.hero .inner{padding:112px 0 72px;max-width:760px}
-.kicker{color:var(--gold2);font-size:13px;letter-spacing:.22em;text-transform:uppercase}
-h1{font-size:clamp(42px,7vw,82px);line-height:1.03;margin:.2em 0 .25em}
-.hero p{font-size:clamp(18px,2vw,24px);color:#ded8cf;max-width:660px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
-.stat{border:1px solid rgba(202,169,107,.35);background:rgba(12,12,12,.55);padding:18px;border-radius:16px}
-.stat b{display:block;font-size:clamp(24px,4vw,38px);color:var(--gold2)}
-.stat span{font-size:13px;color:var(--muted)}
-section{padding:86px 0;border-top:1px solid rgba(255,255,255,.05)}
-.alt{background:var(--bg2)}
-.sec-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:end;margin-bottom:38px}
-.sec-head h2{font-size:clamp(30px,4.2vw,52px);margin:0;line-height:1.08}
-.sec-head p{margin:0;color:var(--muted);font-size:17px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.card{background:linear-gradient(180deg,#181818,#111);border:1px solid rgba(202,169,107,.16);border-radius:20px;padding:24px}
-.card h3{margin-top:0;font-size:22px}
-.badge{display:inline-block;padding:5px 10px;border:1px solid rgba(202,169,107,.35);border-radius:999px;color:var(--gold2);font-size:12px;letter-spacing:.08em}
-.money{font-size:34px;color:var(--gold2);font-weight:800;margin:6px 0}
-.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:center}
-.flow .step{padding:18px 12px;text-align:center;background:#141414;border:1px solid #2b2822;border-radius:14px;font-size:14px}
-.visual{border-radius:22px;overflow:hidden;min-height:340px;background:#111}
-.visual img{width:100%;height:100%;object-fit:cover}
-.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.kpi .card b{display:block;font-size:34px;color:var(--gold2)}
-.bar{height:12px;background:#242424;border-radius:999px;overflow:hidden;margin:8px 0 4px}
-.bar span{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2))}
-.table-wrap{overflow:auto;border:1px solid rgba(202,169,107,.18);border-radius:18px}
-table{width:100%;border-collapse:collapse;min-width:650px;background:#111}
-th,td{padding:16px 18px;border-bottom:1px solid #292929;text-align:left}
-th{color:var(--gold2);font-size:13px;letter-spacing:.08em}
-.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.timeline .year{font-size:13px;color:var(--gold);letter-spacing:.16em}
-.timeline h3{font-size:28px;margin:6px 0}
-.note{font-size:13px;color:#9f988f}
-.cta{padding:72px 0;background:linear-gradient(135deg,#17120a,#080808 55%,#131313)}
-.ctabox{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
-.ctabox h2{font-size:clamp(34px,5vw,60px);margin:0}
-.cta-pills{display:flex;gap:10px;flex-wrap:wrap}
-.pill{padding:10px 14px;border-radius:999px;background:rgba(202,169,107,.12);border:1px solid rgba(202,169,107,.25);color:var(--gold2)}
-footer{padding:28px 0;color:#847e76;font-size:12px}
-@media (max-width:900px){
-  .menu{display:none}
-  .sec-head,.ctabox{grid-template-columns:1fr}
-  .grid3,.kpi,.timeline{grid-template-columns:1fr 1fr}
-  .flow{grid-template-columns:1fr 1fr}
-  .stats{grid-template-columns:1fr}
-}
-@media (max-width:600px){
-  .container{width:min(calc(100% - 24px),var(--max))}
-  .navin{height:58px}
-  section{padding:62px 0}
-  .hero{min-height:78vh;background-position:62% center}
-  .hero .inner{padding:96px 0 46px}
-  .grid3,.grid2,.kpi,.timeline{grid-template-columns:1fr}
-  .flow{grid-template-columns:1fr}
-  h1{font-size:46px}
-  .sec-head h2{font-size:34px}
-}
+:root{--bg:#090909;--bg2:#111;--card:#171717;--line:#2c2924;--text:#f3efe7;--muted:#b8b0a4;--gold:#c7a463;--gold2:#e2c58c;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 34px),var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:50;background:rgba(9,9,9,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(199,164,99,.16)}
+.navin{height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.05em}.brand small{display:block;color:var(--gold);font-size:10px;letter-spacing:.18em}
+.navlinks{display:flex;gap:18px;font-size:13px;color:#d5cec2}.navlinks a:hover{color:var(--gold2)}
+.hero{padding:120px 0 82px;background:
+radial-gradient(circle at 80% 20%,rgba(199,164,99,.22),transparent 20%),
+radial-gradient(circle at 82% 70%,rgba(199,164,99,.10),transparent 30%),
+linear-gradient(120deg,#050505,#101010 55%,#21170d)}
+.kicker{color:var(--gold2);font-size:12px;letter-spacing:.2em}.hero h1{font-size:clamp(44px,7vw,84px);line-height:1.02;margin:10px 0 18px}.hero p{font-size:clamp(17px,2vw,23px);max-width:780px;color:#ddd6cb}
+.hero-grid,.stats,.grid2,.grid3,.grid4{display:grid;gap:18px}.hero-grid{grid-template-columns:1.2fr .8fr;align-items:end}.stats{grid-template-columns:repeat(3,1fr);margin-top:30px}
+.stat,.card,.panel{background:linear-gradient(180deg,#181818,#111);border:1px solid rgba(199,164,99,.17);border-radius:20px;padding:24px}
+.stat b,.metric{display:block;font-size:clamp(25px,4vw,40px);color:var(--gold2);font-weight:800}.stat span,.muted{color:var(--muted);font-size:13px}
+section{padding:82px 0;border-top:1px solid rgba(255,255,255,.05)}section.alt{background:var(--bg2)}
+.section-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:end;margin-bottom:34px}.section-head h2{margin:0;font-size:clamp(31px,4.4vw,52px);line-height:1.1}.section-head p{margin:0;color:var(--muted);font-size:17px}
+.grid2{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:repeat(3,1fr)}.grid4{grid-template-columns:repeat(4,1fr)}
+.card h3{margin:4px 0 8px;font-size:21px}.card p{margin:0;color:#d1c9be}.tag{display:inline-block;padding:5px 10px;border-radius:999px;border:1px solid rgba(199,164,99,.32);color:var(--gold2);font-size:11px;letter-spacing:.08em}
+.big{font-size:clamp(32px,5vw,60px);font-weight:900;color:var(--gold2);line-height:1.05}.quote{font-size:clamp(24px,3.4vw,42px);font-weight:800;line-height:1.2}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.flow>div{background:#141414;border:1px solid #29261f;border-radius:14px;padding:17px 10px;text-align:center;font-size:13px}
+.table-wrap{overflow:auto;border:1px solid rgba(199,164,99,.16);border-radius:16px}table{width:100%;min-width:700px;border-collapse:collapse;background:#111}th,td{padding:15px 16px;border-bottom:1px solid #292929;text-align:left}th{color:var(--gold2);font-size:12px;letter-spacing:.08em}
+.toc{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.toc a{display:block;background:#131313;border:1px solid #27231e;border-radius:14px;padding:15px;color:#d7d0c4}.toc a span{color:var(--gold);font-size:11px;display:block}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.timeline .card strong{color:var(--gold2);font-size:13px;letter-spacing:.1em}
+.list{margin:0;padding-left:20px}.list li{margin:7px 0}.callout{border-left:4px solid var(--gold);padding:16px 20px;background:#15120d;border-radius:0 14px 14px 0;color:#e6dfd4}
+.bar{height:10px;background:#262626;border-radius:999px;overflow:hidden;margin:8px 0 6px}.bar span{height:100%;display:block;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+.cta{background:linear-gradient(135deg,#1c1409,#080808 58%,#151515)}.cta-box{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center}.pills{display:flex;gap:9px;flex-wrap:wrap}.pill{padding:9px 13px;border:1px solid rgba(199,164,99,.25);background:rgba(199,164,99,.08);border-radius:999px;color:var(--gold2);font-size:13px}
+details{background:#121212;border:1px solid #28251f;border-radius:16px;margin:12px 0;padding:0 18px}summary{cursor:pointer;padding:18px 0;font-weight:700;color:#eee}details>div{padding:0 0 18px;color:#cfc7bb}
+footer{padding:32px 0;color:#8e867a;font-size:12px}
+@media(max-width:900px){.navlinks{display:none}.hero-grid,.section-head,.cta-box{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr 1fr}.toc{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}}
+@media(max-width:600px){.wrap{width:min(calc(100% - 24px),var(--max))}.navin{height:58px}.hero{padding:92px 0 58px}section{padding:60px 0}.grid2,.grid3,.grid4,.toc,.flow{grid-template-columns:1fr}.hero h1{font-size:48px}.section-head h2{font-size:34px}}
 </style>
 </head>
 <body>
-<nav class="nav"><div class="container navin">
-<div class="brand">大洋國際車業集團<small>FOUNDER SHAREHOLDER PLAN</small></div>
-<div class="menu">
-<a href="#model">商業模式</a><a href="#fund">資金用途</a><a href="#finance">財務模型</a><a href="#rights">股東權益</a><a href="#risk">風控</a><a href="#roadmap">三年藍圖</a>
-</div></div></nav>
+<nav><div class="wrap navin"><div class="brand">大洋國際車業集團<small>FOUNDER SHAREHOLDER PLAN</small></div><div class="navlinks"><a href="#summary">投資摘要</a><a href="#model">商業模式</a><a href="#finance">財務模型</a><a href="#rights">股東權益</a><a href="#risk">風控治理</a><a href="executive.html">12頁摘要版</a></div></div></nav>
 
 <header class="hero">
-<div class="container inner">
+<div class="wrap hero-grid">
+<div>
 <div class="kicker">高端中古車交易 × 創始股東會員生態圈</div>
 <h1>大洋國際<br>車業集團</h1>
-<p>以五年內高流通性進口中古車為核心，建立買、賣、換、寄售、代尋車與股東會員服務的一體化高端汽車交易平台。</p>
+<p>公司目前尚未正式成立。本案為「創始股東籌備＋公司設立＋事業啟動」計畫，募資完成後才進入正式公司設立、股東協議、章程與資金到位程序。</p>
 <div class="stats">
-<div class="stat"><b>NT$30M</b><span>創始股東募集目標</span></div>
+<div class="stat"><b>NT$30M</b><span>募集目標</span></div>
 <div class="stat"><b>NT$2M</b><span>基本參與單位</span></div>
-<div class="stat"><b>12–16 台</b><span>首批核心庫存規模</span></div>
+<div class="stat"><b>35%</b><span>工作版創始投資股東池</span></div>
 </div>
+</div>
+<div class="panel"><div class="tag">投資性質</div><div class="quote">這是一門「車源＋週轉＋客戶」的生意。</div><p class="muted">投資人取得的是公司股權，不是固定收益商品，也不是三年到期可自動取回本金。</p></div>
 </div>
 </header>
 
-<section>
-<div class="container">
-<div class="sec-head"><h2>我們要建立什麼？</h2><p>不是傳統中古車行，而是以資金週轉、車源管理與高端客戶關係為核心的交易平台。</p></div>
+<section id="summary">
+<div class="wrap">
+<div class="section-head"><h2>先看懂這個案子</h2><p>網站先用高層摘要回答投資人最重要的幾個問題，再往下展開完整營運、財務、股權與治理內容。</p></div>
+<div class="grid4">
+<div class="card"><span class="tag">事業定位</span><h3>高端中古車平台</h3><p>聚焦五年內高流通性進口中古車，經營買賣、寄售、代尋車與車換車。</p></div>
+<div class="card"><span class="tag">資金用途</span><h3>3,000萬創始資金池</h3><p>約2,200萬投入車輛庫存，其餘保留營運、行銷、系統與風險準備。</p></div>
+<div class="card"><span class="tag">第一年模型</span><h3>7,000–8,000萬</h3><p>以2,200萬車輛資金為核心，目標支撐約7,000–8,000萬年度交易規模。</p></div>
+<div class="card"><span class="tag">股東價值</span><h3>股權＋會員權益</h3><p>股東權利與額外福利分開設計，避免誤解為固定收益。</p></div>
+</div>
+<div class="callout" style="margin-top:22px">一句話：以創始股東資金建立第一批高端中古車交易能力，再透過寄售、代尋車、車換車與股東會員網絡放大交易規模。</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap">
+<div class="section-head"><h2>網站內容導覽</h2><p>完整內容來自詳細版與高層版簡報重整，閱讀方式改成投資人決策邏輯，而不是逐頁簡報。</p></div>
+<div class="toc">
+<a href="#market"><span>01</span>市場與客戶</a><a href="#model"><span>02</span>服務與收入</a><a href="#operations"><span>03</span>營運與車源</a><a href="#inventory"><span>04</span>庫存策略</a>
+<a href="#funds"><span>05</span>資金配置</a><a href="#finance"><span>06</span>財務模型</a><a href="#risk"><span>07</span>風控與KPI</a><a href="#rights"><span>08</span>股權與福利</a>
+<a href="#exit"><span>09</span>退出與治理</a><a href="#launch"><span>10</span>設立與100天計畫</a><a href="#roadmap"><span>11</span>三年藍圖</a><a href="#fit"><span>12</span>適合的創始股東</a>
+</div>
+</div>
+</section>
+
+<section id="market">
+<div class="wrap">
+<div class="section-head"><h2>市場切入：不做全部中古車</h2><p>策略不是廣撒網，而是選擇品牌辨識度高、價格透明度較高、可管理週轉的高端流通車。</p></div>
+<div class="grid2">
+<div class="card"><h3>為什麼不主打低價大眾車？</h3><ul class="list"><li>單車毛利有限，需要大量交易與人力管理。</li><li>車況差異較大，維修與售後糾紛機率較高。</li><li>較難建立高端會員圈與股東附加價值。</li></ul></div>
+<div class="card"><h3>為什麼選五年內高端進口車？</h3><ul class="list"><li>車況相對可控，較易掌握保養紀錄與殘值。</li><li>客戶購買能力較高，適合發展回購與換車。</li><li>品牌與價格帶能支撐高端會員生態。</li></ul></div>
+</div>
+<div class="grid3" style="margin-top:18px">
+<div class="card"><span class="tag">A 高週轉</span><div class="big">80–150萬</div><p>以快速成交與現金回收為核心。</p></div>
+<div class="card"><span class="tag">B 主力獲利</span><div class="big">150–250萬</div><p>兼顧毛利與品牌定位。</p></div>
+<div class="card"><span class="tag">C 品牌形象</span><div class="big">250–500萬+</div><p>少量配置，吸引高端客戶與曝光。</p></div>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap">
+<div class="section-head"><h2>目標客戶：找會持續換車的人</h2><p>高端中古車的價值在於客戶終身價值，而不是一次成交。</p></div>
 <div class="grid3">
-<div class="card"><span class="badge">01</span><h3>高端中古車交易</h3><p>聚焦出廠五年內、高流通性、高保值性的進口中古車。</p></div>
-<div class="card"><span class="badge">02</span><h3>低資本占用服務</h3><p>以寄售、代尋車與車換車逐步放大交易規模，降低自有資金占用。</p></div>
-<div class="card"><span class="badge">03</span><h3>股東會員生態圈</h3><p>把創始股東同時轉化為核心客戶、推薦者、車源與商務資源節點。</p></div>
+<div class="card"><h3>企業主／專業人士</h3><p>有換車能力，重視時間效率、信任來源與交易便利。</p></div>
+<div class="card"><h3>高資產家庭</h3><p>重視車況透明、品牌形象、售後服務與可靠介紹。</p></div>
+<div class="card"><h3>企業商務用車</h3><p>主管用車、接待用車、商務車與週期性換車需求。</p></div>
+<div class="card"><h3>車主寄售客戶</h3><p>希望賣得好、賣得快，同時降低交易時間與風險。</p></div>
+<div class="card"><h3>股東與親友圈</h3><p>形成第一批低成本、高信任度的核心客戶來源。</p></div>
+<div class="card"><h3>高端生活會員</h3><p>未來可延伸旅遊、健康、餐飲、高爾夫與商務交流。</p></div>
 </div>
 </div>
 </section>
 
-<section class="alt" id="model">
-<div class="container">
-<div class="sec-head"><h2>真正的商業模式：資金週轉</h2><p>我們不追求單台車賺最多，而追求每一元資本一年能完成更多次健康交易。</p></div>
-<div class="flow">
-<div class="step">現金</div><div class="step">取得車源</div><div class="step">整備</div><div class="step">行銷</div><div class="step">成交</div><div class="step">本金＋毛利再投入</div>
-</div>
-<div class="grid2" style="margin-top:26px">
-<div class="card"><h3>核心公式</h3><div class="money">資金 × 週轉次數 × 平均毛利率</div><p>這決定年度交易毛利能力。</p></div>
-<div class="visual" style="display:grid;place-items:center;background:radial-gradient(circle at 65% 45%,rgba(224,195,139,.26),transparent 25%),linear-gradient(135deg,#080808,#241a0d)"><div style="padding:36px;text-align:center"><div class="kicker">CAPITAL VELOCITY</div><div class="money" style="font-size:58px">× 3–4</div><p style="color:var(--muted)">目標年度資金週轉效率</p></div></div>
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<div class="sec-head"><h2>車輛策略</h2><p>初期不把資金集中在超跑，而是用三層庫存兼顧現金流、獲利與品牌形象。</p></div>
+<section id="model">
+<div class="wrap">
+<div class="section-head"><h2>五種收入來源，建立交易閉環</h2><p>只做買賣會受庫存與資金限制；完整交易場景能提高交易頻率與客戶黏著。</p></div>
 <div class="grid3">
-<div class="card"><span class="badge">A級｜高週轉</span><div class="money">80–150萬</div><p>主力創造現金流，優先選擇市場流通性高、成交速度快的進口車款。</p></div>
-<div class="card"><span class="badge">B級｜主力獲利</span><div class="money">150–250萬</div><p>兼顧單車毛利與品牌定位，建立穩定的核心獲利層。</p></div>
-<div class="card"><span class="badge">C級｜品牌形象</span><div class="money">250–500萬+</div><p>少量配置高階性能車與特殊車款，創造品牌話題與高端客群吸引力。</p></div>
+<div class="card"><span class="tag">01</span><h3>自有車買賣</h3><p>公司採購優質車源，整備後銷售，創造合理交易毛利。</p></div>
+<div class="card"><span class="tag">02</span><h3>車主寄售</h3><p>不需先墊全部車款，以服務費或佣金創造收入，是未來放大規模的重要槓桿。</p></div>
+<div class="card"><span class="tag">03</span><h3>代客尋車</h3><p>先有明確需求，再搜尋與查核車源，降低盲目進貨與庫存風險。</p></div>
+<div class="card"><span class="tag">04</span><h3>車換車</h3><p>舊車估價折抵，增加回購頻率；舊車也可再進入庫存或寄售系統。</p></div>
+<div class="card"><span class="tag">05</span><h3>周邊服務</h3><p>美容、鍍膜、PPF、包膜、保險、融資、保養、精品等延伸收益。</p></div>
+<div class="card"><span class="tag">核心</span><h3>客戶不是一次交易</h3><p>一位客戶可以同時是買家、賣家、換車者、寄售者與推薦者。</p></div>
+</div>
+<div class="callout" style="margin-top:22px">長期方向：公司由「自己買車來賣」進化到「管理市場上的交易」。</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap">
+<div class="section-head"><h2>核心經營公式：資金週轉效率</h2><p>不追求單台車毛利最大，而追求合理毛利、快速週轉與現金回收。</p></div>
+<div class="flow"><div>現金</div><div>取得車源</div><div>車況／價格評估</div><div>整備與行銷</div><div>成交回收</div><div>本金＋毛利再投入</div></div>
+<div class="grid2" style="margin-top:20px"><div class="card"><div class="tag">核心公式</div><div class="big">資金 × 週轉次數 × 毛利率</div><p>同樣一筆2,200萬資金，一年週轉2次與4次，全年交易能力可能接近倍數差異。</p></div><div class="card"><h3>經營原則</h3><ul class="list"><li>毛利合理，不為少量價差長期壓庫存。</li><li>庫存要低，現金不能全部被車鎖住。</li><li>每完成一筆交易，都累積車價資料、客戶關係與未來回購機會。</li></ul></div></div>
+</div>
+</section>
+
+<section id="operations">
+<div class="wrap">
+<div class="section-head"><h2>營運流程：靠流程，不靠直覺</h2><p>每一台車都應該被當成小型投資案，進場前必須先算風險、價格與週轉。</p></div>
+<div class="table-wrap"><table><thead><tr><th>階段</th><th>主要任務</th><th>管理輸出</th></tr></thead><tbody>
+<tr><td>1 車源初篩</td><td>品牌、年份、里程、車況、價格、流通性</td><td>是否進入鑑價</td></tr>
+<tr><td>2 車況鑑定</td><td>事故、泡水、保養、維修、鈑件、電系</td><td>風險等級</td></tr>
+<tr><td>3 價格決策</td><td>行情、同款庫存、預估毛利、週轉天數</td><td>最高收購價</td></tr>
+<tr><td>4 整備上架</td><td>拍攝、文案、廣告、平台上架、客戶推送</td><td>上市價格</td></tr>
+<tr><td>5 銷售成交</td><td>看車、議價、合約、付款、交車、過戶</td><td>成交毛利</td></tr>
+<tr><td>6 回顧改善</td><td>庫存天數、詢問來源、毛利差異、客戶回饋</td><td>下一次採購規則</td></tr>
+</tbody></table></div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap">
+<div class="section-head"><h2>第一年車源：三條供應管道</h2><p>車源能力是中古車事業的命脈，不能只靠臨時找車。</p></div>
+<div class="grid3">
+<div class="card"><h3>車商／同業合作</h3><p>快速取得市場車源與行情。第一年任務是建立合作名單、成交紀錄與信任評分。</p></div>
+<div class="card"><h3>車主直接收購／寄售</h3><p>利潤空間與客戶關係更好。透過股東圈、社群與內容行銷取得車主。</p></div>
+<div class="card"><h3>企業／租賃／特殊車源</h3><p>有機會取得批量或特殊條件車輛，但必須建立法務、付款、驗車與風控流程。</p></div>
 </div>
 </div>
 </section>
 
-<section class="alt" id="fund">
-<div class="container">
-<div class="sec-head"><h2>3,000萬元如何使用？</h2><p>核心原則：不把所有現金變成車，保留足夠的營運週轉與風險準備。</p></div>
+<section id="inventory">
+<div class="wrap">
+<div class="section-head"><h2>首批庫存：約14台，不大量壓超跑</h2><p>A級做現金流、B級做利潤、C級做品牌；三層庫存用不同標準管理。</p></div>
+<div class="table-wrap"><table><thead><tr><th>層級</th><th>價格帶</th><th>台數</th><th>資金</th><th>角色</th><th>管理重點</th></tr></thead><tbody>
+<tr><td>A 高週轉</td><td>80–150萬</td><td>8台</td><td>約800萬</td><td>快速成交／現金流</td><td>60–90天內回收</td></tr>
+<tr><td>B 主力獲利</td><td>150–250萬</td><td>4台</td><td>約800萬</td><td>毛利與品牌兼具</td><td>90–120天內成交</td></tr>
+<tr><td>C 品牌形象</td><td>250–500萬+</td><td>2台</td><td>約600萬</td><td>高端客戶與曝光</td><td>嚴格控制價格與持有比例</td></tr>
+</tbody></table></div>
+<div class="grid2" style="margin-top:20px"><div class="card"><h3>超跑的優勢</h3><ul class="list"><li>高曝光、強話題。</li><li>吸引高資產客戶。</li><li>具展示與會員活動價值。</li></ul></div><div class="card"><h3>超跑的風險</h3><ul class="list"><li>客群窄、成交週期長。</li><li>維修、保險、行情波動較高。</li><li>單一車輛可能占用過高比例資金。</li></ul></div></div>
+</div>
+</section>
+
+<section class="alt" id="funds">
+<div class="wrap">
+<div class="section-head"><h2>3,000萬元資金配置</h2><p>車輛庫存要夠，但現金水位更不能失守。</p></div>
 <div class="grid2">
 <div>
-<div class="card"><b>車輛採購及庫存</b><div class="bar"><span style="width:73.3%"></span></div><small>2,200萬元｜73.3%</small></div>
-<div class="card"><b>營運週轉</b><div class="bar"><span style="width:10%"></span></div><small>300萬元｜10%</small></div>
-<div class="card"><b>展場＋行銷＋系統</b><div class="bar"><span style="width:10%"></span></div><small>300萬元｜10%</small></div>
-<div class="card"><b>風險準備金</b><div class="bar"><span style="width:6.7%"></span></div><small>200萬元｜6.7%</small></div>
+<div class="card"><b>車輛採購及庫存</b><div class="bar"><span style="width:73.3%"></span></div><div class="muted">2,200萬｜73.3%｜首批約14台核心庫存</div></div>
+<div class="card"><b>營運週轉金</b><div class="bar"><span style="width:10%"></span></div><div class="muted">300萬｜10%｜人事、租金、日常營運</div></div>
+<div class="card"><b>展場、行銷、系統</b><div class="bar"><span style="width:10%"></span></div><div class="muted">300萬｜10%｜展場、品牌行銷、CRM</div></div>
+<div class="card"><b>風險準備金</b><div class="bar"><span style="width:6.7%"></span></div><div class="muted">200萬｜6.7%｜維修、市場波動、現金水位</div></div>
 </div>
-<div class="visual" style="display:grid;place-items:center;background:linear-gradient(145deg,#111,#1d1710)"><div style="width:82%;display:grid;gap:14px"><div class="kicker">CAPITAL ALLOCATION</div><div style="display:flex;gap:8px;height:34px"><span style="width:73.3%;background:var(--gold);border-radius:8px"></span><span style="width:10%;background:#7f6b47;border-radius:8px"></span><span style="width:10%;background:#554a38;border-radius:8px"></span><span style="width:6.7%;background:#332e25;border-radius:8px"></span></div><p style="color:var(--muted)">車輛庫存 73.3%｜營運與風險資金 26.7%</p></div></div>
+<div class="card"><span class="tag">第一年部署節奏</span><h3>不要一次買滿，也不要太慢啟動</h3><p><b>1–2月：</b>公司設立、展場、CRM、第一批3–5台。</p><p><b>3–4月：</b>首批8–10台，建立拍攝、上架、銷售、交車SOP。</p><p><b>5–8月：</b>依成交補庫存，同步增加寄售與代尋車。</p><p><b>9–12月：</b>檢討KPI，調整車種比例與第二年擴張模型。</p></div>
 </div>
 </div>
 </section>
 
 <section id="finance">
-<div class="container">
-<div class="sec-head"><h2>第一年度財務模型</h2><p>以下為籌備階段的經營模型與目標，不代表保證收益。</p></div>
-<div class="kpi">
-<div class="card"><b>2,200萬</b><span>車輛交易資金</span></div>
-<div class="card"><b>7,000–8,000萬</b><span>年度交易規模目標</span></div>
-<div class="card"><b>8%–12%</b><span>初步交易毛利率模型</span></div>
-<div class="card"><b>200–250萬</b><span>基準營業利益模型</span></div>
+<div class="wrap">
+<div class="section-head"><h2>第一年度財務模型</h2><p>投資人應該看假設、公式與敏感度，而不是只看一個獲利數字。</p></div>
+<div class="grid4">
+<div class="card"><div class="metric">2,200萬</div><p>車輛交易資金</p></div>
+<div class="card"><div class="metric">約3.3次</div><p>加權年度週轉</p></div>
+<div class="card"><div class="metric">約7,360萬</div><p>基準交易規模</p></div>
+<div class="card"><div class="metric">8%–12%</div><p>交易毛利率模型</p></div>
 </div>
-<p class="note">上述模型仍需扣除場租、人事、行銷、整備、行政、系統、運輸及其他實際營運成本。</p>
-</div>
-</section>
-
-<section class="alt">
-<div class="container">
-<div class="sec-head"><h2>首批約14台核心庫存</h2><p>不是為了展示數量，而是用精準庫存驗證週轉模型。</p></div>
-<div class="table-wrap">
-<table>
-<thead><tr><th>層級</th><th>台數</th><th>平均成本</th><th>預估資金</th><th>任務</th></tr></thead>
-<tbody>
-<tr><td>A級</td><td>8</td><td>約100萬</td><td>約800萬</td><td>高週轉、現金流</td></tr>
-<tr><td>B級</td><td>4</td><td>約200萬</td><td>約800萬</td><td>主力獲利</td></tr>
-<tr><td>C級</td><td>2</td><td>約300萬</td><td>約600萬</td><td>品牌形象</td></tr>
-</tbody></table>
-</div>
-</div>
-</section>
-
-<section id="rights">
-<div class="container">
-<div class="sec-head"><h2>創始股東得到什麼？</h2><p>股權是投資核心；用車、交易與會員福利是額外價值，兩者分開設計。</p></div>
-<div class="grid3">
-<div class="card"><h3>股東權益</h3><p>公司股權、表決權、股東會參與權、盈餘分配權與依法應有的資訊權利。</p></div>
-<div class="card"><h3>汽車交易權益</h3><p>優先購車、股東成交方案、賣車／寄售優惠、車換車、成交推薦獎勵。</p></div>
-<div class="card"><h3>尊榮會員福利</h3><p>年度用車點數、股東活動、車聚、旅遊與年度健康管理等福利。</p></div>
-</div>
+<div class="grid2" style="margin-top:18px"><div class="card"><div class="metric">600–700萬</div><p>核心交易毛利模型，尚未扣除營運成本。</p></div><div class="card"><div class="metric">200–250萬</div><p>扣除固定與變動成本後的基準營業利益模型。</p></div></div>
+<div class="table-wrap" style="margin-top:22px"><table><thead><tr><th>情境</th><th>交易規模</th><th>毛利率</th><th>交易毛利</th><th>營運結果</th></tr></thead><tbody>
+<tr><td>保守</td><td>約5,500萬</td><td>約7%</td><td>約385萬</td><td>接近損益兩平或小幅虧損</td></tr>
+<tr><td>基準</td><td>約7,360萬</td><td>約9%上下</td><td>約600–700萬</td><td>營業利益約200–250萬</td></tr>
+<tr><td>成長</td><td>9,000萬–1億</td><td>10%–11%</td><td>約900–1,100萬</td><td>營業利益可明顯提升</td></tr>
+</tbody></table></div>
+<div class="callout" style="margin-top:22px">第一年真正要驗證的不是最高獲利，而是：車源取得、售價判斷、庫存週轉、現金回收能否流程化。</div>
 </div>
 </section>
 
 <section class="alt">
-<div class="container">
-<div class="sec-head"><h2>工作版股權架構</h2><p>目前採「創辦團隊65%／創始投資股東35%」作為工作版本，最終依正式法律文件定案。</p></div>
-<div class="grid2">
-<div class="card"><div class="money">65%</div><h3>創辦團隊</h3><p>維持經營主導權與後續募資空間。</p></div>
-<div class="card"><div class="money">35%</div><h3>創始投資股東</h3><p>本輪預計募集3,000萬元。</p></div>
-</div>
-<div class="table-wrap" style="margin-top:18px">
-<table>
-<thead><tr><th>投資金額</th><th>參考持股</th></tr></thead>
-<tbody><tr><td>200萬元</td><td>約2.33%</td></tr><tr><td>400萬元</td><td>約4.67%</td></tr><tr><td>600萬元</td><td>約7.00%</td></tr><tr><td>1,000萬元</td><td>約11.67%</td></tr></tbody>
-</table>
+<div class="wrap">
+<div class="section-head"><h2>損益兩平：一年至少要轉幾次？</h2><p>假設固定成本約360萬元／年、扣除變動成本後有效貢獻率約8%，年度交易規模約4,500萬元可接近損益兩平。</p></div>
+<div class="grid4">
+<div class="card"><span class="tag">低於2次</span><h3>危險</h3><p>資金使用效率不足，可能無法覆蓋固定成本。</p></div>
+<div class="card"><span class="tag">2–3次</span><h3>存活</h3><p>能維持營運，但分紅空間有限。</p></div>
+<div class="card"><span class="tag">3–4次</span><h3>正常</h3><p>可支撐基準營運模型。</p></div>
+<div class="card"><span class="tag">4次以上</span><h3>優秀</h3><p>有機會提高盈餘與擴張能力。</p></div>
 </div>
 </div>
 </section>
 
 <section id="risk">
-<div class="container">
-<div class="sec-head"><h2>風險不是避免，而是制度化管理</h2><p>高端中古車交易最大的風險來自庫存、車價、現金流與經營執行。</p></div>
+<div class="wrap">
+<div class="section-head"><h2>風控與董事會KPI</h2><p>股權投資沒有保本；公司的工作是讓風險可見、可管、可追蹤。</p></div>
 <div class="grid3">
-<div class="card"><span class="badge">30 DAYS</span><h3>正常銷售</h3><p>維持正常定價與曝光。</p></div>
-<div class="card"><span class="badge">60 DAYS</span><h3>重新檢討</h3><p>檢討價格、詢問量與行銷策略。</p></div>
-<div class="card"><span class="badge">90 DAYS</span><h3>啟動去化</h3><p>原則啟動降價、交換、批售或股東專案。</p></div>
+<div class="card"><h3>市場風險</h3><p>行情下跌或需求變弱。對策：分散車款、縮短持有時間。</p></div>
+<div class="card"><h3>車況風險</h3><p>隱藏瑕疵、維修成本或客訴。對策：鑑定SOP、保養紀錄、交易揭露。</p></div>
+<div class="card"><h3>庫存風險</h3><p>賣不掉導致資金被卡。對策：30／60／90天處置制度。</p></div>
+<div class="card"><h3>現金流風險</h3><p>車多但現金不足。對策：保留至少500萬元級流動性與風險準備。</p></div>
+<div class="card"><h3>經營風險</h3><p>執行未達預期。對策：KPI、季報與董事會監督。</p></div>
+<div class="card"><h3>法務風險</h3><p>投資與交易文件不完整。對策：律師、會計師建立正式文件。</p></div>
 </div>
-<div class="grid2" style="margin-top:18px">
-<div class="card"><h3>現金流風控</h3><p>維持至少500萬元級的流動性與風險準備，避免「車很多、現金很少」。</p></div>
-<div class="card"><h3>單車集中度</h3><p>單一高價車不得占用過高比例營運資金，避免一台車綁住整體現金流。</p></div>
-</div>
+<details><summary>30／60／90庫存制度</summary><div><b>0–30天：</b>正常銷售。<br><b>31–60天：</b>重新檢討價格、詢問量、廣告與行情。<br><b>61–90天：</b>列入警戒，提高推廣、議價、同業交換或股東專案。<br><b>90天以上：</b>原則啟動降價、批售或快速去化。</div></details>
+<details><summary>董事會每月應看的12個數字</summary><div>庫存總額、庫存台數、平均庫存天數、60天以上庫存、90天以上庫存、月成交台數、單車平均毛利、整體毛利率、資金週轉率、現金餘額、負債餘額、股東福利成本。</div></details>
 </div>
 </section>
 
-<section class="alt" id="roadmap">
-<div class="container">
-<div class="sec-head"><h2>三年發展藍圖</h2><p>從「自己買車自己賣」，逐步進化到「管理市場上的交易」。</p></div>
-<div class="timeline">
-<div class="card"><div class="year">YEAR 1</div><h3>建立</h3><p>公司設立、核心團隊、車源、CRM、客戶資料庫。交易目標約7,000–8,000萬元。</p></div>
-<div class="card"><div class="year">YEAR 2</div><h3>放大</h3><p>增加寄售、代尋車、車換車與VIP會員，降低自有資金占用，挑戰1億元交易規模。</p></div>
-<div class="card"><div class="year">YEAR 3</div><h3>平台化</h3><p>建立車源、買家、成交價格與高端會員資料庫，形成高端汽車交易會員平台。</p></div>
+<section class="alt" id="rights">
+<div class="wrap">
+<div class="section-head"><h2>股權工作方案與股東權益</h2><p>目前為工作版本，正式比例仍須依公司設立文件、股東協議與實際出資條件確認。</p></div>
+<div class="grid2"><div class="card"><div class="big">65%</div><h3>創辦團隊</h3><p>保留經營主導權與後續融資空間。</p></div><div class="card"><div class="big">35%</div><h3>創始投資股東</h3><p>本輪工作版股東池。</p></div></div>
+<div class="table-wrap" style="margin-top:18px"><table><thead><tr><th>投資金額</th><th>參考持股</th></tr></thead><tbody><tr><td>200萬元</td><td>約2.33%</td></tr><tr><td>400萬元</td><td>約4.67%</td></tr><tr><td>600萬元</td><td>約7.00%</td></tr><tr><td>1,000萬元</td><td>約11.67%</td></tr></tbody></table></div>
+<div class="grid2" style="margin-top:18px">
+<div class="card"><h3>股東權利</h3><ul class="list"><li>公司股權與表決權</li><li>股東會參與權</li><li>盈餘分配權</li><li>資訊權</li><li>股份轉讓權</li></ul></div>
+<div class="card"><h3>額外股東福利</h3><ul class="list"><li>年度用車點數</li><li>48–72小時優先購車</li><li>買車、賣車、寄售與車換車優惠</li><li>真實汽車交易之推薦成交獎勵</li><li>股東活動與健康管理</li></ul></div>
 </div>
+<div class="callout" style="margin-top:20px">福利不等於投資報酬；股息與盈餘分配必須依公司實際經營成果與正式決議辦理。</div>
 </div>
 </section>
 
 <section>
-<div class="container">
+<div class="wrap">
+<div class="section-head"><h2>用車福利：有吸引力，也要可控</h2><p>用車點數是創始股東福利，不是租賃主業，也不是現金報酬。</p></div>
 <div class="grid2">
-<div class="visual" style="display:grid;place-items:center;background:radial-gradient(circle at 30% 30%,rgba(202,169,107,.24),transparent 18%),linear-gradient(145deg,#17120c,#080808)"><div style="padding:38px"><div class="kicker">FOUNDER NETWORK</div><div class="money" style="font-size:48px">資金 × 資源 × 人脈</div><p style="color:var(--muted)">以創始股東網絡建立第一層高端客戶與車源生態。</p></div></div>
-<div class="card"><span class="badge">創始合作夥伴</span><h2 style="font-size:42px;line-height:1.08">我們募集的不只是資金</h2><p>更希望找到能帶入車源、客戶、金融、科技、醫療、房地產、旅遊與高端服務資源的合作夥伴。</p><p class="money">資金讓公司啟動，資源讓公司成長。</p></div>
+<div class="card"><h3>制度設計</h3><ul class="list"><li>每位股東依投資級距取得年度用車點數。</li><li>僅限公司公告的「股東體驗車」。</li><li>A／B／C級車依成本扣不同點數。</li><li>油資、ETC、停車、違規、超額里程、人為損害由使用人負擔。</li></ul></div>
+<div class="card"><h3>核心原則</h3><ul class="list"><li>銷售優先，股東體驗其次。</li><li>已收訂、客戶預約或即將交車者不開放。</li><li>年度福利成本必須有公司預算上限。</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="exit">
+<div class="wrap">
+<div class="section-head"><h2>退出與公司治理</h2><p>三年穩定期不是本金到期日；股東退出應透過股份轉讓機制。</p></div>
+<div class="grid2">
+<div class="card"><h3>三年股權穩定期</h3><p>三年後可依股東協議申請股份轉讓，但不代表公司必須用原價買回。</p><h3>建議轉讓順位</h3><ol class="list"><li>現有股東</li><li>創辦團隊</li><li>公司認可的新股東</li><li>符合資格第三方</li></ol></div>
+<div class="card"><h3>治理分工</h3><p><b>股東會：</b>重大股權、章程、盈餘分配與重大事項。</p><p><b>董事會：</b>監督經營、重大預算、借款、投資與政策。</p><p><b>經營團隊：</b>車源、採購、銷售、庫存、人事、行銷與日常營運。</p><p><b>股東季報：</b>成交、庫存、毛利、現金、負債與重大事項。</p></div>
+</div>
+</div>
+</section>
+
+<section id="launch">
+<div class="wrap">
+<div class="section-head"><h2>正式設立與100天啟動</h2><p>投資人有興趣，不代表可以直接收款；先完成條件與法律文件，再依文件出資。</p></div>
+<div class="grid3">
+<div class="card"><strong class="tag">Day 1–30</strong><h3>設立與制度</h3><p>公司登記、帳戶、股東文件、展場、CRM與財務制度。</p></div>
+<div class="card"><strong class="tag">Day 31–60</strong><h3>車源與行銷</h3><p>第一批3–8台車進場、拍攝、上架、社群與客戶推送。</p></div>
+<div class="card"><strong class="tag">Day 61–100</strong><h3>成交與校準</h3><p>完成早期成交，檢討毛利、詢問來源、庫存天數與車款策略。</p></div>
+</div>
+<details open><summary>正式設立前應完成的文件</summary><div>① 創始股東招募企畫書　② 投資條件書 Term Sheet　③ 創始股東協議書　④ 公司章程　⑤ 股東福利管理辦法。正式投資款應依公司設立與法律文件流程進行，避免由個人帳戶直接收取大量投資款。</div></details>
+</div>
+</section>
+
+<section class="alt" id="roadmap">
+<div class="wrap">
+<div class="section-head"><h2>三年藍圖：從交易公司走向會員平台</h2><p>三年內重點不是無限制擴張，而是逐步降低自有庫存依賴。</p></div>
+<div class="timeline">
+<div class="card"><strong>YEAR 1｜建立</strong><h3>交易能力</h3><p>公司、車源、CRM、第一批庫存與成交SOP。年度交易目標約7,000–8,000萬元。</p></div>
+<div class="card"><strong>YEAR 2｜放大</strong><h3>降低資本占用</h3><p>增加寄售、代尋車、車換車與股東會員活動，挑戰1億元交易規模。</p></div>
+<div class="card"><strong>YEAR 3｜平台化</strong><h3>管理交易</h3><p>建立車源、買家、成交價格、高端會員資料庫，由持有車輛走向管理交易。</p></div>
+</div>
+<div class="grid4" style="margin-top:18px">
+<div class="card"><h3>車源資料庫</h3><p>誰有好車、什麼價格願意賣、車況如何。</p></div>
+<div class="card"><h3>買家資料庫</h3><p>誰正在找什麼車、預算多少、何時決策。</p></div>
+<div class="card"><h3>成交價格資料庫</h3><p>什麼條件的車，實際成交多少。</p></div>
+<div class="card"><h3>高資產會員資料庫</h3><p>誰有持續換車、推薦與商務合作能力。</p></div>
+</div>
+</div>
+</section>
+
+<section id="fit">
+<div class="wrap">
+<div class="section-head"><h2>什麼人適合成為創始股東？</h2><p>這個案子適合共同建立事業的人，不適合只期待固定利息或保本的人。</p></div>
+<div class="grid2">
+<div class="card"><h3>優先邀請</h3><ul class="list"><li>企業主、高端客戶圈、人脈資源強者。</li><li>車業、金融、保險、房地產、醫療、旅遊與高端服務業資源者。</li><li>願意把資金、車源、客戶與商務資源帶入公司者。</li></ul></div>
+<div class="card"><h3>不適合</h3><ul class="list"><li>期待每年固定利息或固定報酬。</li><li>期待三年後公司一定原價買回。</li><li>不能接受股權投資風險與私人公司流動性限制。</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap">
+<div class="section-head"><h2>成熟投資人應該問的10個問題</h2><p>願景之外，更重要的是假設是否可以被驗證。</p></div>
+<div class="grid2">
+<div class="card"><ol class="list"><li>創辦團隊會投入多少資金與資源？</li><li>公司成立後誰負責採購與估價？</li><li>第一批車源從哪裡來？</li><li>每台車如何設定最高收購價？</li><li>平均庫存天數如何控管？</li></ol></div>
+<div class="card"><ol class="list" start="6"><li>股東福利成本上限是多少？</li><li>若只募到2,000萬是否啟動？</li><li>每季揭露哪些營運資料？</li><li>三年後退出如何定價？</li><li>如何避免車多但現金少？</li></ol></div>
 </div>
 </div>
 </section>
 
 <section class="cta">
-<div class="container ctabox">
-<div><div class="kicker">Founder Shareholder Plan</div><h2>大洋國際車業集團</h2><p>高端中古車交易 × 創始股東會員生態圈</p></div>
-<div class="cta-pills">
-<div class="pill">募集目標 NT$30M</div>
-<div class="pill">基本單位 NT$2M</div>
-<div class="pill">三年股權穩定期</div>
-<div class="pill">股權＋交易權益＋會員福利</div>
-</div>
+<div class="wrap cta-box">
+<div><div class="kicker">IMPORTANT NOTICE</div><h2 style="font-size:clamp(34px,5vw,60px);margin:8px 0">本案不是保本型投資</h2><p>本計畫目前為公司籌備暨創始股東招募階段。所有營收、毛利、交易量與公司價值均屬經營模型與預估目標。</p></div>
+<div class="pills"><span class="pill">不保證收益</span><span class="pill">不保證分紅</span><span class="pill">不保證本金</span><span class="pill">不保證股價</span><span class="pill">不保證買回</span><span class="pill">正式條件以法律文件為準</span></div>
 </div>
 </section>
 
-<footer><div class="container">
-本頁為公司籌備階段之商業企畫展示。所有營收、毛利、交易量與公司價值均屬模型與目標，不構成保本、固定收益、保證分紅或保證買回。正式投資條件以公司章程、創始股東協議及正式法律文件為準。
-</div></footer>
-</body>
-</html>
+<section>
+<div class="wrap">
+<div class="section-head"><h2>參與流程</h2><p>下一步不是立即匯款，而是先確認條件與完成正式文件。</p></div>
+<div class="flow"><div>閱讀本網站</div><div>一對一說明</div><div>確認投資意向</div><div>簽署條件書</div><div>公司設立與法律文件</div><div>依文件出資／正式營運</div></div>
+</div>
+</section>
+
+<footer><div class="wrap">大洋國際車業集團｜創始股東招募企畫。買得準｜賣得快｜週轉高｜庫存低｜客戶久。<br>本頁為公司籌備階段之商業企畫展示，不構成保本、固定收益、保證分紅或保證買回。</div></footer>
+</body></html>
